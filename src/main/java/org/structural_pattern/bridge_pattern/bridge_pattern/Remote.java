@@ -1,4 +1,4 @@
-package org.structural_pattern.adaptor.bridge_pattern;
+package org.structural_pattern.bridge_pattern.bridge_pattern;
 
 public abstract class Remote {
 

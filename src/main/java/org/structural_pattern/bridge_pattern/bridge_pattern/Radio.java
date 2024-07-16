@@ -1,13 +1,13 @@
-package org.structural_pattern.adaptor.bridge_pattern;
+package org.structural_pattern.bridge_pattern.bridge_pattern;
 
-public class TV implements Device{
+public class Radio implements Device{
     private boolean powerOn = false;
     private int channel = 1;
-    private int volume = 10;
+    private int volume = 5;
     @Override
     public void powerOn() {
         this.powerOn = true;
-        System.out.println("TV power on");
+        System.out.println("Radio power on");
     }
 
     @Override
@@ -22,7 +22,7 @@ public class TV implements Device{
             this.channel = channel;
             System.out.println("Channel set to: "+this.channel);
         }else{
-            System.out.println("TV is not on");
+            System.out.println("Radio is not on");
         }
     }
 
@@ -32,7 +32,7 @@ public class TV implements Device{
             this.volume = volume;
             System.out.println("Volume set to: "+this.volume);
         }else{
-            System.out.println("TV is not on");
+            System.out.println("Radio is not on");
         }
     }
 }
